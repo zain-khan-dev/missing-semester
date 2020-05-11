@@ -1,0 +1,5 @@
+1. ls -la -h --sort=time --color
+2. marco.sh in the same directory
+3.2shell3.sh in the same directory
+4.ls *.html|xargs -d "\n" zip file.zip
+5.

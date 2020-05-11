@@ -1,0 +1,13 @@
+1.mkdir /tmp/missing
+2.man touch
+3.touch /tmp/missing/semester
+4.
+echo "#\!/bin/sh" >/tmp/missing/semester
+echo "curl --head --silent https://missing.csail.mit.edu">>/tmp/missing/semester
+5.The semester file does not have execute rights
+6.when we write sh filename we are providing the file as input to the sh program whereas when we execute it as ./ we do not have the necessary rights
+7.man chmod
+8. chmod 777 semester when !(shebang) occur it instructs it to open that file with the bash 
+9.date -r /tmp/missing/semester |cat>>~/last-modified.txt
+10.cat /sys/class/thermal/thermal_zone0/temp
+
